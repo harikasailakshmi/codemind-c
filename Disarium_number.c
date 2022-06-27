@@ -1,30 +1,35 @@
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-int n,k,sum=0,c=0,r;
-scanf("%d",&n);
-k=n;
-while(k>0)
-{
-k=k/10;
-c++;
-}
-k=n;
-while(k>0)
-{
-r=k%10;
-sum=sum+pow(r,c);
-k=k/10;
-c--;
-}
-if(sum==n)
-{
-printf("True");
-}
-else
-{
-printf("False");
-}
-return 0;
+    int n,i,j,m;
+    scanf("%d",&n);
+    int ar[100];
+    int k=n,t=0,s=1,ad=0,f=0,a=0;
+    while(k!=0)
+    {
+        t=k%10;
+        ar[a]=t;
+        k=k/10;
+        a++;
+    }
+   int z=a;
+    for(j=1;j<=a;j++)
+    {
+        for(m=z;m>0;m--)
+        {
+            s=s*ar[f];
+        }
+        f++;
+        z--;
+        ad=ad+s;
+        s=1;
+    }
+    if(ad==n)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
 }
