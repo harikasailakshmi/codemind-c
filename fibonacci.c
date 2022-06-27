@@ -1,15 +1,15 @@
-#include<stdio.h>    
-int main()    
-{    
- int n1=0,n2=1,n3,i,number;    
- scanf("%d",&number);    
- printf("%d %d",n1,n2);
- for(i=2;i<number;++i)
- {    
-  n3=n1+n2;    
-  printf(" %d",n3);    
-  n1=n2;    
-  n2=n3;    
- }  
-  return 0;  
- }
+#include<stdio.h>
+int main()
+{
+    int n,i,s,k,tn=1,tm=0;
+    scanf("%d",&n);
+    printf("0 ");
+    for(i=0;i<n-1;i++)
+    {
+       s=tn+tm;
+       tn=tm;
+       tm=s;
+       printf("%d ",s);
+    }
+}
+
