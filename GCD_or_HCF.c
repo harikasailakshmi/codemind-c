@@ -1,15 +1,17 @@
 #include<stdio.h>
 int main()
 {
-int a,b,i,gcd;
-scanf("%d%d",&a,&b);
-for(i=1;i<=a&&i<=b;i++)
-{
-if(a%i==0&&b%i==0)
-{
-gcd=i;
-}
-}
-printf("%d",gcd);
-return 0;
+    int n,m,i,k,s;
+    scanf("%d%d",&n,&m);
+    //if(m<n)
+    //k=m;
+   for(i=1;i<=m*n;i++)
+   {
+       if(n%i==0&&m%i==0)
+       {
+           s=i;
+           
+       }
+   }
+   printf("%d",s);
 }
