@@ -1,11 +1,13 @@
 #include<stdio.h>
-main()
+int main ()
 {
-    int a,b,i=1;
-    scanf("%d%d",&a,&b);
-    while(a*i%b!=0)
-    {
-        i++;
-    }
-    printf("%d",a*i);
+int i,a,b,r;
+scanf("%d%d",&a,&b);
+for(i=1;a>i<b;i++)
+   {
+     r=a*i;
+     if(r%b==0)
+       break;
+   }
+   printf("%d",r);
 }
