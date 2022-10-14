@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int m=0,i,d,n,n1,n2,t,c=2,j,a[1000],b[1000],p,k=0;
+    scanf("%d",&n1);
+    scanf("%d",&n2);
+    n=n1+n2;
+for(i=n+1;i<=n+1000;i++)
+{
+    c=2;
+    for(j=2;j<i;j++)
+    {
+        if(i%j==0)
+        {
+            c++;
+        }
+    }
+    if(c==2)
+    {
+        a[k]=abs(n-i);
+        m++;
+        k++;
+    }
+}
+d=a[0];
+for(i=0;i<m;i++)
+{
+    if(d>a[i])
+    {
+        d=a[i];
+    }
+}
+printf("%d",d);
+}
